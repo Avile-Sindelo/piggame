@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Play the Pig Game </title>
+	<meta charset="utf-8">
+	<meta content="viewport" width=device-width, initial-scale=1.0>
+	<link rel="stylesheet" type="text/css" href="css/pigGame.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&family=Architects+Daughter&family=Bad+Script&family=Black+Ops+One&family=Caveat&family=Cinzel&family=Courgette&family=Dancing+Script&family=Fredericka+the+Great&family=Gloria+Hallelujah&family=Great+Vibes&family=Handlee&family=Imperial+Script&family=Island+Moments&family=Kalam:wght@300&family=Licorice&family=Love+Light&family=Luckiest+Guy&family=Merienda&family=Moo+Lah+Lah&family=Moon+Dance&family=Oooh+Baby&family=Permanent+Marker&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;1,100&family=Press+Start+2P&family=Rock+3D&family=Rock+Salt&family=Satisfy&family=Shadows+Into+Light&family=Shizuru&family=Sigmar+One&family=Source+Code+Pro:wght@200&family=Special+Elite&family=The+Nautigal:wght@700&family=Ultra&family=Vujahday+Script&family=Waterfall&family=Yellowtail&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="clearfix" class="wrapper">
+		<div class="player-0-panel active">
+			<div class="player-name" id="name-0"> Player 1 </div>
+			<div class="player-score" id="score-0"> 0 </div>
+			<div class="player-current-box">
+				<div class="player-current-label"> Current </div>
+				<div class="player-current-score" id="current-0"> 0 </div>
+			</div>
+		</div>
+
+		<div class="player-1-panel">
+			<div class="player-name" id="name-1"> Player 2 </div>
+			<div class="player-score" id="score-1"> 0 </div>
+			<div class="player-current-box">
+				<div class="player-current-label"> Current </div>
+				<div class="player-current-score" id="current-1"> 0 </div>
+			</div>
+		</div>
+
+		<button id="btn-new"> New Game </button>
+		<button id="btn-roll"> Roll </button>
+		<button id="btn-hold"> Hold </button>
+
+		<img src="images/dice-3.png" alt="dice-image" id="dice">
+		<div id="rules">
+			<h2 id="rulesHeading"> Hello there, Welcome to the Pig Game.</h2>
+			<h3 id="rulesList"> Rules </h3>
+			<p id="actualRules"> 
+				1. This is a 2-player game. <br>
+				2. You can ROLL a die multiple times and HOLD your current score to accumulate to 100.<br>
+				3. If you roll a 1, you lose all your current score and its the next player's turn. <br>
+				4. The first player to make it to 100 wins the game.
+			</p>
+			<h4 id="begin"> Let the games begin! </h4>
+			<h3 id="developer"> Developed by Avile Sindelo. </h3>
+			<button id="play"> Play </button>
+		</div>
+	</div>
+
+	<div class="footer"> Copyright © KimsonKodes </div>
+	<script type="text/javascript" src="js/pigGame.js">
+	</script>
+</body>
+</html>
