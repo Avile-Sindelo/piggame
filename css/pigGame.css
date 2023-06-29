@@ -1,11 +1,11 @@
 .clearfix::after{
-			content: "";
+			content: " ";
 			display: table;
 			clear: both;
 		}
 
 		.wrapper{
-			width: 1000px;
+			width: 100%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -17,16 +17,16 @@
 
 		.player-0-panel{
 			float: left;
-			width: 40%;
-			height: 600px;
-			padding: 64px;
+			width: 41%;
+			height: 100vh;
+			padding: 5% 7%  5% 7%;
 		}
 		.player-1-panel{
 			transform: translateY(-100%);
 			float: right;
-			width: 40%;
-			height: 600px;
-			padding: 63px;
+			width: 41%;
+			height: 100vh;
+			padding: 5% 7%  5% 7%;
 		}
 		
 		.active{

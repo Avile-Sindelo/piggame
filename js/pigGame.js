@@ -121,12 +121,14 @@
 				document.getElementById('name-' + activePlayer).style.color = '#964f8e';
 				document.getElementById('name-' + activePlayer).style.fontSize = '50px';
 				//Display the explosion image after we have a winner
-				document.getElementById('dice').src = 'images/mathsProblem.jpg';
+				document.getElementById('dice').src = 'images/happy3.gif';
 				//Remove the active class from the winner's panel
 				document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
 				document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
 				document.getElementById('btn-roll').style.display = 'none';
 				document.getElementById('btn-hold').style.display = 'none';
+				//Remove the local score 
+				removeScores();
 				alert(" We have a winner!!! ");
 			} else{
 				//Next player
@@ -180,4 +182,22 @@
 			activePlayer = 0;
 			roundScore = 0;
 
+			//Display the score boxes
+			restoreScores();
+
 		});
+
+
+		function removeScores(){
+			let scores = document.getElementsByClassName('player-current-box');
+			for(let i = 0; i < scores.length; i++){
+				scores[i].style.display = 'none';
+			}
+		}
+
+		function restoreScores(){
+			let scores = document.getElementsByClassName('player-current-box');
+			for(let i = 0; i < scores.length; i++){
+				scores[i].style.display = 'block';
+			}
+		}
